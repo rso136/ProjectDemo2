@@ -23,5 +23,5 @@ var routesB = require('./controllers/players_controller.js');
 app.use('/', routes);
 app.use('/', routesB);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
